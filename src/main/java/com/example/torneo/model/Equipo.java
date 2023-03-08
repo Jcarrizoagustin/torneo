@@ -1,8 +1,18 @@
 package com.example.torneo.model;
 
-import java.util.List;
+import lombok.Data;
 
+import java.util.List;
+@Data
 public class Equipo {
-    public String nombre;
-    public List<Jugador> jugadores;
+    private String nombre;
+    private List<Jugador> jugadores;
+
+    public Equipo(String nombre){
+        this.nombre = nombre;
+    }
+    @Override
+    public String toString(){
+        return this.nombre;
+    }
 }

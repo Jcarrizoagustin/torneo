@@ -3,7 +3,7 @@ package com.example.torneo.model;
 import lombok.Data;
 
 @Data
-public class EstadisticaEquipo {
+public class EstadisticaEquipo{
     private Equipo equipo;
     private Integer partidosJugados;
     private Integer partidosGanados;
@@ -13,4 +13,5 @@ public class EstadisticaEquipo {
     private Integer golesEnContra;
     private Integer diferenciaDeGoles;
     private Integer puntos;
+
 }
